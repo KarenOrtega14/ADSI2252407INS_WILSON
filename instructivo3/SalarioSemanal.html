@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Instructivo3.css">
+    <link rel="stylesheet" href="../icons/all.css">
+    <script src="../js/script.js"></script>
+    <title>Salario Semanal</title>
+</head>
+
+<body>
+    <label class="icono-menu" onclick="mostrarMenu()"><i class="fas fa-bars"></i></label>
+    <nav id="menu-principal">
+        <Ul class="menu">
+            <li class="pg-principal"><a href="../Index.html"><i class="fas fa-home"></i>Pagina Principal</a></li>
+            <li><a href="#"><i class="fas fa-dollar-sign"></i>Sueldo Semanal</a></li>
+            <li><a href="Aumento.html"><i class="far fa-chart-bar"></i>Determinar Aumento</a></li>
+            <li><a href="Nota.html"><i class="fas fa-percentage"></i>Calcular nota final</a></li>
+            <li><a href="Operaciones.html"><i class="fas fa-greater-than-equal"></i>operaciones</a></li>
+        </UL>
+    </nav>
+    <div class="main-content">
+        <h1>Calcular el sueldo semanal</h1><br>
+        <fieldset>
+            <form>
+                <input type="decimal" id="horas" placeholder="Ingrese el número de horas trabajadas en la semana"><br><br>
+        <button type="button" onclick="Consultar();">Consultar</button><br><br>
+        Sueldo Semanal:
+        <div id="Sueldo"></div>
+            </form>
+        </fieldset>
+    
+    </div>
+</body>
+
+</html>
+<script>
+    function Consultar() {
+        var horas = parseInt(document.getElementById("horas").value);
+        var pagoNormal = 10000;
+        var HorasExtras = 15000;
+
+        var he = (horas - 40);
+
+        var t = horas * pagoNormal;
+        var pt = HorasExtras * he;
+        var T = pt + 400000;
+
+        if (horas <= 40) {
+            document.getElementById('Sueldo').innerHTML = '<h1> Su saldo es: ' + t + '</h1>';
+        } else {
+            document.getElementById('Sueldo').innerHTML = '<h1> Su saldo es: $' + T + '</h1>';
+        }
+    }
+</script>

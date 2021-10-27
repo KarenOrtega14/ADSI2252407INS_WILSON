@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Instructivo3.css">
+    <link rel="stylesheet" href="../icons/all.css">
+    <script src="../js/Aumento.js"></script>
+    <script src="../js/script.js"></script>
+    <title>Promedio</title>
+</head>
+<body>
+<label class="icono-menu" onclick="mostrarMenu()"><i class="fas fa-bars"></i></label>
+    <nav id="menu-principal">
+        <Ul class="menu">
+            <li class="pg-principal"><a href="../Index.html"><i class="fas fa-home"></i>Pagina Principal</a></li>
+            <li><a href="SalarioSemanal.html"><i class="fas fa-dollar-sign"></i>
+                Sueldo Semanal</a></li>
+            <li><a href="#"><i class="far fa-chart-bar"></i>Determinar Aumento</a></li>
+            <li><a href="Nota.html"><i class="fas fa-percentage"></i>Calcular nota final</a></li>
+            <li><a href="Operaciones.html"><i class="fas fa-greater-than-equal"></i>operaciones</a></li>
+        </UL>
+    </nav>
+    <h1>Calcular el Aumento</h1><br>
+    <fieldset>
+        <form>
+            <input type="number" id="salario" placeholder="Ingrese cuanto gana"><br><br>
+            <button type="button" onclick="Determinar();">Determinar Aumento</button> <br><br>
+             Aumento:<div id="Sueldo"> </div> 
+        </form>
+    </fieldset>
+   
+</body>
+
+</html>

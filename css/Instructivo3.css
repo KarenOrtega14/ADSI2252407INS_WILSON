@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(0, 0, 0);
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+}
+
+nav {
+    /* position: absolute; */
+    position: fixed;
+    height: 100%;
+    background-color: rgb(149, 3, 3);
+    padding-right: 2em;
+    padding-top: 3em;
+    z-index: 10;
+    left: -20em;
+    top: 0;
+    transition: all .5s;
+}
+
+.menu{
+    padding-top: 0;
+    list-style: none;
+    line-height: 65px;
+    margin: 1em auto 0 auto;
+    width: 18em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+    width: 100%;
+    font-family: cursive;
+    
+}
+
+.menu li {
+    box-shadow: 3px 0 rgba(197, 197, 197, 0.63) inset;
+    margin-bottom: 5px;
+    width: 108%;
+    transition: all .5s;
+    border-bottom: 1px solid white;
+}
+.pg-principal{
+    border-top: 2px solid white;
+    
+}
+.menu li:hover {
+    box-shadow: 20em 0 rgba(255, 255, 255, .2) inset;
+}
+
+.menu a:hover {
+    margin-left: 0.6em;
+}
+
+.fas,
+.far {
+    color: white;
+    padding-right: .2em;
+    font-size: 1.2em;
+}
+
+.fa-bars {
+    position: absolute;
+    left: 20px;
+    z-index: 20;
+    font-size: 1.5em;
+}
+
+.icono-menu {
+    position: fixed;
+    z-index: 20;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+}
+
+nav.mostrar {
+    left: 0;
+}
+
+button {
+    background-color: wheat;
+}
+fieldset{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+form{
+    padding: 15px;
+    color: white;
+}
+input, button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+button{
+ background-color: red;
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+}
+#Sueldo{
+    color: white;
+    height: 40px;
+    font-size: 12px;
+}
+.nota{
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.Input-nota{
+    margin-left: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}

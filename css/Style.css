@@ -1,0 +1,61 @@
+body {
+    font:  Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+:root {
+    --primary: rgb(255, 255, 255);
+    --Secundary: rgb(151, 151, 151);
+}
+
+table {
+    width: 20%;
+    background-color: rgb(12, 5, 22);
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.boton1 {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    margin: center;
+    margin-left: 20px;
+    background-color: rgb(73, 166, 243);
+    border: 5px outset #909393;
+    border-radius: 15px;
+    font-size: 40px;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+#boton {
+    background-color: rgb(14, 45, 223);
+}
+.pantalla {
+    padding: 3px;
+    background: linear-gradient(1deg, var(--Secundary), var(--Secundary), var(--primary));
+    border-bottom: 3px dashed rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#pantalla {
+    text-align: right;
+    font-size:30px;
+    font-family: 'Cormorant SC', serif;
+    background-color: #c3c2c2;
+    height: 40px;
+    margin: 5px 10px 20px 10px;
+    padding: 10px;
+    box-shadow: inset 4px 2px 1px 1px rgba(0, 0, 0, .7);
+}
+
+#boton:active{
+    background-color: rgb(5, 38, 146);
+}
+.boton1:active{
+    background:rgb(53, 96, 238);
+}
